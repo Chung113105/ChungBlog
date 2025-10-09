@@ -6,6 +6,7 @@ import ProfilePictures from '@/assets/profile_pictures.jpg'
 import { getCollection } from 'astro:content'
 import { template } from '@/settings'
 
+const baseUrl = import.meta.env.BASE_URL
 const isBlogPopulated = await getCollection('blog').then(collection => collection.length > 0)
 
 const {fullName, title} = profile
@@ -26,20 +27,22 @@ const {fullName, title} = profile
 			<div class='mx-4 mt-16'>
 				<ul class='space-y-4 menu grow shrink menu-md overflow-y-auto'>
 					<li>
-                        <a href={`${template.base}/`} class='text-lg'>Home</a>
+                        
+						 <a href={`${baseUrl}`} class='text-lg'>Home</a>
+						
 					</li>
 					<li>
-                        <a href={`${template.base}/research`} class='text-lg'>Research</a>
+                        <a href={`${baseUrl}/research`} class='text-lg'>Research</a>
 					</li>
 					<li>
-                        <a href={`${template.base}/papers`} class='text-lg'>Papers</a>
+                        <a href={`${baseUrl}/papers`} class='text-lg'>Papers</a>
 					</li>
 					<li>
-                        <a href={`${template.base}/cv`} class='text-lg'>CV</a>
+                        <a href={`${baseUrl}/cv`} class='text-lg'>CV</a>
                     </li>
                     {isBlogPopulated &&
 					<li>
-                        <a href={`${template.base}/blog/1`} class='text-lg'>Blog</a>
+                        <a href={`${baseUrl}/blog/1`} class='text-lg'>Blog</a>
 </li>
                     }
 				</ul>
