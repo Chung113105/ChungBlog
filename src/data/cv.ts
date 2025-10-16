@@ -48,13 +48,14 @@ export const education = [
 
 export const skills = [
 	{
-		title: '',
+		title: '學科：Math ',
 		description: '',
+
 	},
-	// {
-	// 	title: 'Experimental Techniques',
-	// 	description: 'Spectroscopy, Isolation of Radioactive Elements, Radiation Measurement',
-	// },
+	{
+		title: '資訊：Office, C/C++, Python, Java, html, css',
+	 	description: '',
+	 },
 ];
 
 export const publications = [

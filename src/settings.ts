@@ -1,5 +1,5 @@
 export const profile = {
-	fullName: 'Your Name',
+	fullName: '蔡 忠良',
 	title: '',
 	institute: '',
 	author_name: '', // Author name to be highlighted in the papers section
@@ -34,6 +34,6 @@ export const template = {
 
 export const seo = {
 	default_title: 'Astro Academia',
-	default_description: 'Astro Academia is a template for academic websites.',
+	default_description: '數學虐我千百遍，我待數學如初戀',
 	default_image: '/images/astro-academia.png',
 }

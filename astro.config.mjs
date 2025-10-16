@@ -13,6 +13,6 @@ export default defineConfig({
     integrations: [react(), tailwind(), sitemap()],
     site: 'https://chung113105.github.io',
     base:'/ChungBlog',
-    trailingSlash: "always"
+    //trailingSlash: "always"
     
 });
